@@ -58,7 +58,7 @@ NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
     
     // JDStatusBarStyleError
     else if ([styleName isEqualToString:JDStatusBarStyleError]) {
-        style.barColor = [UIColor colorWithRed:0.588 green:0.118 blue:0.000 alpha:1.000];
+        style.barColor = [UIColor flatRedColor];
         style.textColor = [UIColor whiteColor];
         style.progressBarColor = [UIColor redColor];
         style.progressBarHeight = 2.0;
@@ -67,7 +67,7 @@ NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
     
     // JDStatusBarStyleWarning
     else if ([styleName isEqualToString:JDStatusBarStyleWarning]) {
-        style.barColor = [UIColor colorWithRed:0.900 green:0.734 blue:0.034 alpha:1.000];
+        style.barColor = [UIColor flatGrayColor];
         style.textColor = [UIColor darkGrayColor];
         style.progressBarColor = style.textColor;
         return style;
@@ -75,7 +75,7 @@ NSString *const JDStatusBarStyleDark    = @"JDStatusBarStyleDark";
     
     // JDStatusBarStyleSuccess
     else if ([styleName isEqualToString:JDStatusBarStyleSuccess]) {
-        style.barColor = [UIColor colorWithRed:0.588 green:0.797 blue:0.000 alpha:1.000];
+        style.barColor = [UIColor flatGreenColor];
         style.textColor = [UIColor whiteColor];
         style.progressBarColor = [UIColor colorWithRed:0.106 green:0.594 blue:0.319 alpha:1.000];
         style.progressBarHeight = 1.0+1.0/[[UIScreen mainScreen] scale];
